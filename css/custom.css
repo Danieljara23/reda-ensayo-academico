@@ -3,3 +3,44 @@
   filter: grayscale(40%);
   cursor: pointer;
 }
+.pit-book{
+  display: none;
+  margin-top: 50px;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+}
+.pit-book > div {
+    vertical-align: top;
+}
+
+.pit-book-toc p {
+    display: block;
+    margin-top: 30px;
+}
+
+.pit-book-toc {
+    width: 220px;
+    height: 180px;
+    background-color: #438dc5;
+    display: inline-block;
+    position: relative;
+    z-index: 9;
+}
+.pit-book-toc::after{
+  content: "";
+  background-image: url("../images/libro-estructura-03.png");
+  width: 63px;
+  height: 221px;
+  position: absolute;
+  top: -15px;
+  right: -35px;
+  z-index: 10;
+}
+
+.pit-book-content {
+    width: 420px;
+    height: 180px;
+    background-color: #EEEEEE;
+    display: inline-block;
+}
