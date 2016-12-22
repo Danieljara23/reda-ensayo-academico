@@ -14,9 +14,42 @@
     vertical-align: top;
 }
 
+
+
+.pit-book-page h4 {
+    color: #383c4a;
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.pit-book-page{
+  display: none;
+}
+.pit-book-page.current{
+  display: block;
+}
+
+.pit-book-page p {
+  font-size: 13pt;
+  text-align: left;
+  color: #383c4a;
+  padding-left: 30px;
+  padding-right: 30px;
+}
 .pit-book-toc p {
-    display: block;
-    margin-top: 30px;
+  display: block;
+  margin-top: 29px;
+  font-size: 14pt;
+  font-weight: bold;
+  color: #383c4a;
+}
+.pit-book-toc p:hover{
+  cursor: pointer;
+  color: #F0A920;
+}
+.pit-book-toc p.current{
+  color: white;
 }
 
 .pit-book-toc {
@@ -26,6 +59,7 @@
     display: inline-block;
     position: relative;
     z-index: 9;
+    color:#438dc5;
 }
 .pit-book-toc::after{
   content: "";
