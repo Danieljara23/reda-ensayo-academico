@@ -3,17 +3,19 @@
   filter: grayscale(40%);
   cursor: pointer;
 }
-.pit-book{
+.pit-book,.pit-book-2{
   display: none;
   margin-top: 50px;
   width: 100%;
   height: 300px;
   text-align: center;
 }
-.pit-book > div {
+.pit-book-2{
+  height: 500px;
+}
+.pit-book > div,.pit-book-2 > div {
     vertical-align: top;
 }
-
 
 
 .pit-book-page h4 {
@@ -61,11 +63,42 @@
     z-index: 9;
     color:#438dc5;
 }
+.pit-book-2 >.pit-book-toc {
+    height: 480px;
+    width: 15%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.pit-book-2 >.pit-book-toc > p{
+  margin-top: 42px;
+}
+.pit-book-2 >.pit-book-content {
+    height: 480px;
+    width: 50%;
+}
+
+.pit-book-2  .pit-book-page p {
+  font-size: 11pt;
+  padding-left: 40px;
+  margin-bottom: 2px;
+  margin-top: 8px;
+}
+
 .pit-book-toc::after{
   content: "";
   background-image: url("../images/libro-estructura-03.png");
   width: 63px;
   height: 221px;
+  position: absolute;
+  top: -15px;
+  right: -35px;
+  z-index: 10;
+}
+.pit-book-2 > .pit-book-toc::after{
+  content: "";
+  background-image: url("../images/libro-elementos-04.png");
+  width: 63px;
+  height: 423px;
   position: absolute;
   top: -15px;
   right: -35px;
@@ -77,4 +110,32 @@
     height: 180px;
     background-color: #EEEEEE;
     display: inline-block;
+}
+.pit-ensayo{
+  display: none;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+.pit-ensayo-criterios{
+  text-align: center;
+}
+.pit-ensayo-criterios p {
+    border: 2pt dashed #4496d2;
+    width: 190px;
+    height: 60px;
+    display: inline-block;
+    padding: 20px;
+    vertical-align: top;
+    margin-right: 20px;
+    font-size: 14pt;
+    font-weight: bold;
+    color: #383C4A;
+}
+.pit-book-2 .pit-book-page-ejemplo{
+  border: 2pt dashed #4496d2;
+  width: 90%;
+  display: inline-block;
+  margin-top: 10px;
+  padding-bottom: 12px;
 }
